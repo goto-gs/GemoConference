@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gemo Conference</title>
+  <link rel="stylesheet" href="../_shared/style.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <a href="./">
+      <h1 class="heading">Gemo Conference</h1>
+    </a>
+    <!-- <p class="note">
+      Change Room mode (before join in a room):
+      <a href="#">mesh</a> / <a href="#sfu">sfu</a>
+    </p> -->
+    <p id="roomName" class="heading">room2</p>
+    <div class="room">
+      <div>
+        <video id="js-local-stream"></video>
+        <span id="js-room-mode"></span>
+        <input type="text" placeholder="Your Name" id="yourName">
+        <button id="js-join-trigger">Join</button>
+        <button id="js-leave-trigger">Leave</button>
+      </div>
+
+      <div class="remote-streams" id="js-remote-streams"></div>
+
+      <div>
+        <pre class="messages" id="js-messages"></pre>
+        <input type="text" id="js-local-text">
+        <button id="js-send-trigger">Send</button>
+      </div>
+    </div>
+    <p class="meta" id="js-meta"></p>
+  </div>
+
+  <button id="js-cam-switch">camera</button>
+  <span id="camera-status"></span>
+
+  <button id="js-mic-switch">microfone</button>
+  <span id="microfone-status"></span>
+
+  <button id="js-screen-share">screen share</button>
+  <button id="js-stop-share">share stop</button>
+
+  <video id="video-test" autoplay></video>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script>
+
+
+  <script src="//cdn.webrtc.ecl.ntt.com/skyway-latest.js"></script>
+  <script src="../_shared/key.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>

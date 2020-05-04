@@ -1,0 +1,21 @@
+.name{
+        font-size: 10px;
+}
+.text{
+        font-size: 16px;
+}
+
+#container{
+        display: flex;
+        align-items: center;
+        flex-direction: column;        
+}
+
+#top{
+        display: flex;
+        align-items: center;
+}
+#bottom{
+        display: flex;
+        align-items: center;
+}
